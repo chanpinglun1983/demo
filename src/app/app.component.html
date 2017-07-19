@@ -42,7 +42,7 @@
             [value]="fieldValue"
             (valueEmitted)="updateTodo($event)"
             [showPrompt]="showDialog">
-</app-dialog>-->
+</app-dialog>
 
 <app-login [title]="'New Task'"
             [template]="'Enter Task:'"
@@ -52,4 +52,11 @@
             (valueEmitted)="updateTodo($event)"
             [showPrompt]="showDialog">
 </app-login>
-
+<h1>Angular Router</h1>
+  <nav>
+    <a routerLink="/login" routerLinkActive="active">login</a>
+    <a routerLink="/login" routerLinkActive="active">login2</a>
+  </nav>
+  <router-outlet></router-outlet>
+-->
+<app-menu> </app-menu >
